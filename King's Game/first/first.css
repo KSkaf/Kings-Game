@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(53, 12, 12);
+    color:goldenrod;
+}
+/* To center everything in game */
+.game{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    border-radius: 40%;
+  }
+ 
+/* Title of the game */
+.title{
+    position: absolute;
+    top: 0;
+    font-size: 4rem;
+    z-index: 2;
+}
+ 
+/* Score Board */
+.score{
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+ 
+/* Score  */
+.p-count,.c-count{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+ 
+/* displaying three buttons in one line */
+.options{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    opacity: .7;
+}
+ 
+/* Styling on all three buttons */
+.rock, .paper, .scissor{
+    padding: 0.8rem;
+    width: 70px;
+    border-radius: 50%;
+    outline: none;
+    border-color: rgb(53, 12, 12);
+    border: none;
+    cursor: pointer;
+    color: rgb(53, 12, 12);
+}
+.move{
+    padding-left: 35px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.movesleft
+{
+    padding-left: 45px;
+}
+ 
+/* Reload button style */
+.reload {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgb(53, 12, 12);
+    outline: goldenrod;
+    border: goldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.next{
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgb(53, 12, 12);
+    outline: goldenrod;
+    border: goldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ 
+.result{
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+ 
+/* Responsive Design */
+@media screen and (max-width: 612px)
+{ 
+    .title{
+        text-align: center;
+    }
+    .score{
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+    .options{
+        width: 100vw;
+    }
+}   

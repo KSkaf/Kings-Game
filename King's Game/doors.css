@@ -1,0 +1,103 @@
+body {
+    background-image: url("images/back2.jpg");
+    background-size: 100%;
+    background-color: black;
+    display: flex;
+}
+
+/*mobile*/
+@media screen and (max-width: 567px) {
+    body {
+        background-image: url("images/back2.jpg");
+        background-size: 100%;
+        background-color: black;
+
+    }
+
+
+}
+
+/*pc*/
+@media screen and (min-width: 1645px) {
+    body {
+        background-image: url("images/cards.jpg");
+        background-size: 100%;
+        background-color: black;
+
+
+
+    }
+}
+
+button {
+    background: grey;
+    margin: 300px 100px 100px 100px;
+    flex-direction: row;
+    height: 500px;
+    width: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 4rem;
+    border-color: rgb(66, 16, 16);
+    border-radius: 5px;
+    -webkit-animation: swing-in-top-fwd 0.75s ease-in-out;
+    animation: swing-in-top-fwd 0.75s ease-in-out;
+
+
+}
+
+@-webkit-keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+.exit {
+    font-size: small;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    bottom: 0px;
+    right: 30%;
+    left: 56%;
+    margin-left: -150px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(66, 16, 16);
+}

@@ -1,0 +1,129 @@
+body {
+    background-image: url("../images/back2.jpg");
+    background-size: 100%;
+    background-color: black;
+    display: flex;
+}
+
+/*mobile*/
+@media screen and (max-width: 567px) {
+    body {
+        background-image: url("../images/back2.jpg");
+        background-size: 100%;
+        background-color: black;
+
+    }
+
+    .button {
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+
+    .guide {
+        text-align: center;
+
+    }
+
+}
+
+/*pc*/
+@media screen and (min-width: 1645px) {
+    body {
+        background-image: url("../images/back.jpg");
+        background-size: 100%;
+        background-color: black;
+
+
+
+    }
+
+    .button {
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+
+    .guide {
+        text-align: center;
+
+    }
+
+}
+
+.guide {
+    text-align: center;
+    margin-left: 400px;
+    font-size: 1.5rem;
+}
+
+button {
+    background: grey;
+    margin-left: 430px;
+    margin-top: 200px;
+    flex-direction: row;
+    height: 500px;
+    width: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 4rem;
+    border-color: rgb(66, 16, 16);
+    border-radius: 5px;
+    -webkit-animation: slit-in-vertical 0.65s ease-out both;
+    animation: slit-in-vertical 0.65s ease-out both;
+
+}
+
+@-webkit-keyframes slit-in-vertical {
+    0% {
+        -webkit-transform: translateZ(-800px) rotateY(90deg);
+        transform: translateZ(-800px) rotateY(90deg);
+        opacity: 0;
+    }
+
+    54% {
+        -webkit-transform: translateZ(-160px) rotateY(87deg);
+        transform: translateZ(-160px) rotateY(87deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+    }
+}
+
+@keyframes slit-in-vertical {
+    0% {
+        -webkit-transform: translateZ(-800px) rotateY(90deg);
+        transform: translateZ(-800px) rotateY(90deg);
+        opacity: 0;
+    }
+
+    54% {
+        -webkit-transform: translateZ(-160px) rotateY(87deg);
+        transform: translateZ(-160px) rotateY(87deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: rgb(66, 16, 16);
+}
+
+
+p {
+    color: goldenrod;
+    margin-left: 470px;
+}
+
+h1 {
+    color: goldenrod;
+    margin-left: 350px;
+}

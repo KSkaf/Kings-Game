@@ -1,0 +1,67 @@
+body{
+    background-image: url("../images/back2.jpg");
+    background-size:100%;
+    background-color: black;
+    display: flex;
+}
+/*mobile*/
+@media screen and (max-width: 567px) {
+    body{
+        background-image: url("../images/cards2.jpg");
+        background-size:100%;
+        background-color: black;
+        
+    }
+
+    
+}
+/*pc*/
+@media screen and (min-width: 1451px) {
+    body{
+        background-image: url("../images/cards.jpg");
+        background-size:100%;
+        background-color: black;
+        
+        
+        
+    }
+}
+
+
+.begin{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    width:300px;
+    height:300px;
+    bottom:0px;
+    right:30%;
+    left:50%;
+    margin-left:-150px;
+}
+button
+{
+    background: rgb(68, 58, 58);
+    color:blanchedalmond;
+    margin: auto;
+    width: 100px;
+}
+
+a{
+    
+    text-decoration: none;
+    color: rgb(66, 16, 16);
+}
+
+section.prologue
+{
+    margin:auto;
+    display: flex;
+    left: 38%;
+    color: blanchedalmond;
+    text-align: center;
+    position:absolute;
+    top:30%;
+
+}
