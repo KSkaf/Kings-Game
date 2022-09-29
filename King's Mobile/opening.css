@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-image: url("images/cards2.jpg");
+    background-size: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+.begin {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 0px;
+    right: 30%;
+    left: 50%;
+    margin-left: -150px;
+}
+
+button {
+    background: rgb(68, 58, 58);
+    color: rgb(219, 202, 175);
+    margin: auto;
+    width: 100px;
+}
+
+a {
+
+    text-decoration: none;
+    color: rgb(66, 16, 16);
+}
+
+section.prologue {
+    margin-left: 55px;
+    color: blanchedalmond;
+    position: absolute;
+    top: 40%;
+}

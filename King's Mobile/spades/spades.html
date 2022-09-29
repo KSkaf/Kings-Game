@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spades</title>
+    <link rel="stylesheet" href="spades.css">
+    <link rel="shortcut icon" href="/King's Game/images/ace.jpg" />
+</head>
+
+<body>
+    <h1 class="welcome">
+        <center>Welcome to Hearts Room</center>
+    </h1>
+
+    <div class="title">In this game you have to find the killer out of 14 people(like werewolf/palermo).Someone had
+        killed Queen of Hearts in the kitchen.
+        Each one of them will tell you a story...</div>
+
+    <div class="buttons">
+        <button id="two"
+            onclick="javascript:alert('Yesterday I saw the Jack run out of the kitchen, he was in shock. I think he might did it...')"
+            style="height: 40px; width: 80px; background-color: rgb(54, 53, 53); cursor: pointer;">Two</button>
+        <button id="three"
+            onclick="javascript:alert('After we find out about Queen Ace was the only one with straight face. I think he might did it...')"
+            style="height: 40px; width: 80px; background-color: rgb(54, 53, 53);cursor: pointer;">Three</button>
+        <button id="four"
+            onclick="javascript:alert('Our Queen had a private meeting with Hearts Queen yesterday .I think she might did it...')"
+            style="height: 40px; width: 80px; background-color: rgb(54, 53, 53);cursor: pointer;">Four</button>
+        <button id="five"
+            onclick="javascript:alert('The Joker came out of a kitchen before Jack and he was in hurry.I think he might did it...')"
+            style="height: 40px; width: 80px; background-color: rgb(54, 53, 53);cursor: pointer;">Five</button>
+        <button id="six"
+            onclick="javascript:alert('I saw Two with a knife heading out of the kitchen to the garden.I think he might did it...')"
+            style="height: 40px; width: 80px; background-color: rgb(54, 53, 53);cursor: pointer;">Six</button>
+        <button id="seven"
+            onclick="javascript:alert('Eight was the cook yesterday he could easily use poison.I think he might did it...')"
+            style="height: 40px; width: 80px; background-color: rgb(54, 53, 53);cursor: pointer;">Seven</button>
+        <button id="eight" onclick="javascript:alert('Ten was the driver of Hearts.I think he might did it...')"
+            style="height: 40px; width: 80px; background-color: rgb(54, 53, 53);cursor: pointer;">Eight</button>
+        <button id="nine"
+            onclick="javascript:alert('Seven was the one who served the dinner.I think he might did it...')"
+            style="height: 40px; width: 80px; background-color: rgb(54, 53, 53);cursor: pointer;">Nine</button>
+        <button id="ten" onclick="javascript:alert('Six brought the drinks.I think he might did it with poison...')"
+            style="height: 40px; width: 80px; background-color: rgb(54, 53, 53);cursor: pointer;">Ten</button>
+        <button id="jack"
+            onclick="javascript:alert('Three took her for a tour of the garden,since he is the gardener.I think he might did it...')"
+            style="height: 40px; width: 80px; background-color: rgb(54, 53, 53);cursor: pointer;">Jack</button>
+        <button id="queen"
+            onclick="javascript:alert('Four accompanied them to the dining table.I think he might did it...')"
+            style="height: 40px; width: 80px; background-color: rgb(54, 53, 53);cursor: pointer;">Queen</button>
+        <button id="king"
+            onclick="javascript:alert('Our loyal card Nine took her for a tour in our castle.I think he might did it...')"
+            style="height: 40px; width: 80px; background-color: rgb(54, 53, 53);cursor: pointer;">King</button>
+        <button id="ace"
+            onclick="javascript:alert('I saw Five exited the restroom about the same time as Hearts.I think he might did it...')"
+            style="height: 40px; width: 130px; background-color: rgb(54, 53, 53);cursor: pointer;">Ace</button>
+        <button id="joker"
+            onclick="javascript:alert('Our King had a secret relationship with Hearts.I think he might did it...')"
+            style="height: 40px; width: 130px; background-color: rgb(54, 53, 53);cursor: pointer;">Joker</button>
+    </div>
+
+    <!--Check result -->
+    <div class="input">
+        <input style="background-color: aliceblue; color: black;" id="myInput" value=" ">
+        <button id="myBtn" onclick="javascript:check()"
+            style="background-color: rgb(54, 53, 53); border-color: rgb(202, 191, 191); cursor: pointer;">Submit</button>
+
+        <script src="spades.js"></script>
+</body>
+
+</html>

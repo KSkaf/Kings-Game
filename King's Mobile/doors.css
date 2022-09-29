@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-image: url("images/back2.jpg");
+    background-size: 130%;
+    background-color: black;
+    background-repeat: no-repeat;
+
+}
+
+button {
+    background: grey;
+    margin: 40px;
+    margin-left: 45px;
+    margin-right: 40px;
+    height: 300px;
+    width: 150px;
+    justify-content: space-evenly;
+    font-size: 4rem;
+    border-color: goldenrod;
+    border-radius: 5px;
+    -webkit-animation: swing-in-top-fwd 0.75s ease-in-out;
+    animation: swing-in-top-fwd 0.75s ease-in-out;
+}
+
+@-webkit-keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+@keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+
+.exit {
+    font-size: small;
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    bottom: 90px;
+    left: 35%;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(66, 16, 16);
+}

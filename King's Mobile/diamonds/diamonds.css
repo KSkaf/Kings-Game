@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(41, 6, 73);
+    color: rgb(134, 3, 3);
+}
+
+/* To center everything in game */
+.game {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 40%;
+}
+
+/* Title of the game */
+.title {
+    position: absolute;
+    top: 0;
+    font-size: 3.5rem;
+    z-index: 2;
+}
+
+/* Score Board */
+.score {
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+}
+
+/* Score  */
+.p-count,
+.c-count {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* displaying three buttons in one line */
+.options {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    opacity: .7;
+}
+
+/* Styling on all three buttons */
+.king,
+.citizen,
+.slave {
+    padding: 0.8rem;
+    outline: none;
+    border-color: rgb(53, 12, 12);
+    border: none;
+    cursor: pointer;
+    color: rgb(41, 6, 73);
+
+    -webkit-animation: slit-in-vertical 0.45s ease-out both;
+    animation: slit-in-vertical 0.45s ease-out both;
+
+
+}
+
+@-webkit-keyframes slit-in-vertical {
+    0% {
+        -webkit-transform: translateZ(-800px) rotateY(90deg);
+        transform: translateZ(-800px) rotateY(90deg);
+        opacity: 0;
+    }
+
+    54% {
+        -webkit-transform: translateZ(-160px) rotateY(87deg);
+        transform: translateZ(-160px) rotateY(87deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+    }
+}
+
+@keyframes slit-in-vertical {
+    0% {
+        -webkit-transform: translateZ(-800px) rotateY(90deg);
+        transform: translateZ(-800px) rotateY(90deg);
+        opacity: 0;
+    }
+
+    54% {
+        -webkit-transform: translateZ(-160px) rotateY(87deg);
+        transform: translateZ(-160px) rotateY(87deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) rotateY(0);
+        transform: translateZ(0) rotateY(0);
+    }
+}
+
+.move {
+    padding-bottom: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+/* Reload button style */
+.reload {
+    display: none;
+    margin-top: 20px;
+    padding: 5px;
+    background: rgb(53, 12, 12);
+    border-radius: 10px;
+    cursor: pointer;
+    color: grey;
+}
+
+.next {
+    display: none;
+    margin-top: 20px;
+    background: rgb(53, 12, 12);
+    border-radius: 10px;
+    cursor: pointer;
+    color: grey;
+}
+
+.result {
+
+    margin-top: 150px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 500px) {
+    .title {
+        text-align: center;
+    }
+
+    .score {
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+
+    .options {
+        width: 100vw;
+    }
+}
